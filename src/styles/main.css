@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+.header__logo {
+  padding: 2.5rem 1.5rem;
+}
+
 .header__nav-item {
   text-decoration: none;
   color: #000000;
@@ -9,7 +13,6 @@
   letter-spacing: 2.5px;
   text-align: center;
   margin-bottom: 2rem;
-  padding-top: 3.2rem;
 }
 
 .header__hamburger-btn {
@@ -23,6 +26,7 @@
           transform: translateY(-50%);
   border: none;
   background-color: transparent;
+  z-index: 10;
 }
 
 .header__hamburger-btn:focus {
@@ -59,14 +63,9 @@
   height: 0.15rem;
 }
 
-.header__responsive-nav--active .header__main-nav--responsive {
-  -webkit-transition: all 0.6s ease-in;
-  transition: all 0.6s ease-in;
-}
-
 .header__main-nav {
-  -webkit-transition: all 0.6s ease-in;
-  transition: all 0.6s ease-in;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,6 +78,11 @@
           align-items: center;
   -webkit-transform: translateY(-150%);
           transform: translateY(-150%);
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .header__main-nav--responsive {
@@ -92,10 +96,24 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 25vh;
-  margin-top: 2rem;
+  position: absolute;
+  padding-top: 6rem;
+  top: 0;
+  left: 0;
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+.header__responsive-nav-cta {
+  background-color: #000000;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 700;
+  padding: 1.4rem 6.8rem;
+  margin-top: 4.1rem;
 }
 
 * {

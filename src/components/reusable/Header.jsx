@@ -13,20 +13,22 @@ const Header = () => {
 
    return (
       <div className="header">
-         <img src={Logo} alt="site logo" />
-         <button
-            href='#'
-            aria-label='hamburger nav'
-            className={
-               showNav
-                  ? 'header__hamburger-btn header__hamburger-btn--active'
-                  : 'header__hamburger-btn'
-            }
-            onClick={toggleNav}
-         >
-            <span className="header__hamburger-line-1"></span>
-            <span className="header__hamburger-line-2"></span>
-         </button>
+         <div className="header__nav-wrapper">
+            <img src={Logo} alt="site logo" className="header__logo" />
+            <button
+               href='#'
+               aria-label='hamburger nav'
+               className={
+                  showNav
+                     ? 'header__hamburger-btn header__hamburger-btn--active'
+                     : 'header__hamburger-btn'
+               }
+               onClick={toggleNav}
+            >
+               <span className="header__hamburger-line-1"></span>
+               <span className="header__hamburger-line-2"></span>
+            </button>
+         </div>
          <section
             className={
                showNav
@@ -54,6 +56,9 @@ const Header = () => {
                      )
                   })
                }
+               <button className="header__responsive-nav-cta">
+                  Get An Invite
+            </button>
             </div>
          </section>
       </div>
