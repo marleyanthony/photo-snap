@@ -1,10 +1,12 @@
-import React from 'react';
+import './styles/main.css';
+import {BrowserRouter, Route} from 'react-router-dom';
+import Home from './components/Home';
 
 function App() {
   return (
-    <div>
-       <h1>Double Test</h1>
-    </div>
+    <BrowserRouter>
+       <Route exact path="/" component={Home} /> 
+    </BrowserRouter>
   );
 }
 
