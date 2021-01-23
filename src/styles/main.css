@@ -116,17 +116,17 @@
   margin-top: 4.1rem;
 }
 
-.hero {
-  background-color: #000000;
+.home-section {
   overflow: hidden;
+  padding: 7.2rem 3.3rem;
 }
 
-.hero__content {
-  padding: 7.2rem 3.3rem;
+.home-section--black {
+  background-color: #000000;
   color: #fff;
 }
 
-.hero__content-header {
+.home-section__content-header {
   font-size: 3.2rem;
   font-weight: 700;
   line-height: 4rem;
@@ -136,7 +136,7 @@
   margin-bottom: 1.6rem;
 }
 
-.hero__content-info {
+.home-section__content-info {
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 2.5rem;
@@ -144,14 +144,13 @@
   margin-bottom: 2.3rem;
 }
 
-.hero__cta {
+.home-section__cta {
   font-size: 1.2rem;
   font-weight: 700;
   line-height: 1.6rem;
   letter-spacing: 2px;
   text-align: left;
   text-transform: uppercase;
-  color: #fff;
   background-color: transparent;
   border: none;
   display: -webkit-box;
@@ -162,7 +161,11 @@
           align-items: center;
 }
 
-.hero__cta-arrow {
+.home-section__cta--white {
+  color: #fff;
+}
+
+.home-section__cta-arrow {
   margin-left: 1.8rem;
 }
 

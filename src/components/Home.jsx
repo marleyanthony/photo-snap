@@ -1,12 +1,12 @@
 import React from 'react';
 import Header from './reusable/Header';
-import Hero from './Home/Hero';
+import Section from './Home/Section';
 
 const Home = () => {
    return (
       <div className="home-page">
          <Header />
-         <Hero />
+         <Section />
       </div>
    )
 }

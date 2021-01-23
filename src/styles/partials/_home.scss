@@ -1,10 +1,10 @@
-// ! hero section 
-.hero {
-   background-color: #000000;
+// ! home-section 
+.home-section {
    overflow: hidden;
+   padding: 7.2rem 3.3rem;
 
-   &__content {
-      padding: 7.2rem 3.3rem;
+   &--black {
+      background-color: #000000;
       color: #fff;
    }
 
@@ -33,11 +33,15 @@
       letter-spacing: 2px;
       text-align: left;
       text-transform: uppercase;
-      color: #fff;
+      // color: #fff;
       background-color: transparent;
       border: none;
       display: flex;
       align-items: center;
+
+      &--white {
+         color: #fff;
+      }
    }
 
    &__cta-arrow {
