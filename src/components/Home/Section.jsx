@@ -13,7 +13,7 @@ const Section = () => {
                      <picture>
                         <source media="(min-width: 1200px)" srcSet={section.imgDesktop} />
                         <source media="(min-width: 768px)" srcSet={section.imgTablet} />
-                        <img src={section.imgMobile} alt={section.alt} className="hero__img" />
+                        <img src={section.imgMobile} alt={section.alt} className="home-section__img" />
                      </picture>
                      <div className={section.sectionClass}>
                         <h1 className="home-section__content-header">

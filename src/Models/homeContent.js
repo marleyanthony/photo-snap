@@ -109,16 +109,19 @@ export const FeaturesContent = [
    {
       icon: responsiveIcon,
       title: '100% Responsive',
-      summary: `No matter which device you're on, our site is full responsive and stories look beautiful on any screen.`
+      summary: `No matter which device you're on, our site is full responsive and stories look beautiful on any screen.`,
+      alt: 'responsive icon'
    },
    {
       icon: limitIcon,
       title: 'No Photo Upload Limit',
-      summary: `Our tool has no limits on uploads or bandwith. Freely upload in bulk and share all of your stories in one go.`
+      summary: `Our tool has no limits on uploads or bandwith. Freely upload in bulk and share all of your stories in one go.`,
+      alt: 'no photo limit icon'
    },
    {
       icon: embedIcon,
       title: 'Available to Embed',
-      summary: `Embed Tweets, Facebook posts, Instagram media, Vimeo or Youtube videos, Google Maps and more.`
+      summary: `Embed Tweets, Facebook posts, Instagram media, Vimeo or Youtube videos, Google Maps and more.`,
+      alt: 'available to embed icon'
    },
 ]
