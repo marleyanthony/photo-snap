@@ -4,7 +4,6 @@ import arrowBlack from '../../assets/shared/desktop/arrow-black.svg';
 import { HomeSectionContent } from '../../Models';
 
 const Section = () => {
-   console.log(HomeSectionContent)
    return (
       <div className="section-wrapper">
          {

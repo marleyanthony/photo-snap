@@ -7,8 +7,26 @@ import beautifulStoriesImgDesktop from '../assets/home/desktop/beautiful-stories
 import designedImgMobile from '../assets/home/mobile/designed-for-everyone.jpg';
 import designedImgTablet from '../assets/home/tablet/designed-for-everyone.jpg';
 import designedImgDesktop from '../assets/home/desktop/designed-for-everyone.jpg';
+// ! card images
+import mountainStoryCardImgMobile from '../assets/stories/mobile/mountains.jpg';
+import mountainStoryCardImgTablet from '../assets/stories/desktop/mountains.jpg';
+import mountainStoryCardImgDesktop from '../assets/stories/desktop/mountains.jpg';
+import sunsetStoryCardImgMobile from '../assets/stories/mobile/cityscapes.jpg';
+import sunsetStoryCardImgTablet from '../assets/stories/desktop/cityscapes.jpg';
+import sunsetStoryCardImgDesktop from '../assets/stories/desktop/cityscapes.jpg';
+import daysStoryCardImgMobile from '../assets/stories/mobile/18-days-voyage.jpg';
+import daysStoryCardImgTablet from '../assets/stories/desktop/18-days-voyage.jpg';
+import daysStoryCardImgDesktop from '../assets/stories/desktop/18-days-voyage.jpg';
+import architecturalsCardImgMobile from '../assets/stories/mobile/architecturals.jpg';
+import architecturalsCardImgTablet from '../assets/stories/desktop/architecturals.jpg';
+import architecturalsCardImgDesktop from '../assets/stories/desktop/architecturals.jpg';
+// ! advantages icons 
+import responsiveIcon from '../assets/features/desktop/responsive.svg';
+import limitIcon from '../assets/features/desktop/no-limit.svg';
+import embedIcon from '../assets/features/desktop/embed.svg';
 
 
+// ! home section content
 export const HomeSectionContent = [
    {
       imgMobile: createImgMobile,
@@ -43,4 +61,64 @@ export const HomeSectionContent = [
       sectionClass: 'home-section',
       buttonClass: 'home-section__cta'
    }
+]
+
+
+
+
+// ! story cards
+export const StoryCardsContent = [
+   {
+      title: 'The Mountains',
+      author: 'John Appleseed',
+      mobileImg: mountainStoryCardImgMobile,
+      tabletImg: mountainStoryCardImgTablet,
+      desktopImg: mountainStoryCardImgDesktop,
+      atl: 'mountains background'
+   },
+   {
+      title: 'Sunset Cityscapes',
+      author: 'Benjamin Cruz',
+      mobileImg: sunsetStoryCardImgMobile,
+      tabletImg: sunsetStoryCardImgTablet,
+      desktopImg: sunsetStoryCardImgDesktop,
+      atl: 'sunset cityscapes background'
+   },
+   {
+      title: '18 Days Voyage',
+      author: 'Alexei Borodin',
+      mobileImg: daysStoryCardImgMobile,
+      tabletImg: daysStoryCardImgTablet,
+      desktopImg: daysStoryCardImgDesktop,
+      atl: 'person walking with backpack on with sunset behind'
+   },
+   {
+      title: 'Architecturals',
+      author: 'Samantha Brooke',
+      mobileImg: architecturalsCardImgMobile,
+      tabletImg: architecturalsCardImgTablet,
+      desktopImg: architecturalsCardImgDesktop,
+      atl: 'Architectural building'
+   },
+]
+
+
+
+// ! features 
+export const FeaturesContent = [
+   {
+      icon: responsiveIcon,
+      title: '100% Responsive',
+      summary: `No matter which device you're on, our site is full responsive and stories look beautiful on any screen.`
+   },
+   {
+      icon: limitIcon,
+      title: 'No Photo Upload Limit',
+      summary: `Our tool has no limits on uploads or bandwith. Freely upload in bulk and share all of your stories in one go.`
+   },
+   {
+      icon: embedIcon,
+      title: 'Available to Embed',
+      summary: `Embed Tweets, Facebook posts, Instagram media, Vimeo or Youtube videos, Google Maps and more.`
+   },
 ]
