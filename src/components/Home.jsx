@@ -3,6 +3,7 @@ import Header from './reusable/Header';
 import Section from './Home/Section';
 import StoryCard from './Home/StoryCard';
 import Features from './Home/Features';
+import Footer from './reusable/Footer';
 
 const Home = () => {
    return (
@@ -11,6 +12,7 @@ const Home = () => {
          <Section />
          <StoryCard />
          <Features />
+         <Footer />
       </div>
    )
 }
