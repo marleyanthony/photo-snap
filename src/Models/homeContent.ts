@@ -74,7 +74,7 @@ export const StoryCardsContent = [
       mobileImg: mountainStoryCardImgMobile,
       tabletImg: mountainStoryCardImgTablet,
       desktopImg: mountainStoryCardImgDesktop,
-      atl: 'mountains background'
+      alt: 'mountains background'
    },
    {
       title: 'Sunset Cityscapes',
@@ -82,7 +82,7 @@ export const StoryCardsContent = [
       mobileImg: sunsetStoryCardImgMobile,
       tabletImg: sunsetStoryCardImgTablet,
       desktopImg: sunsetStoryCardImgDesktop,
-      atl: 'sunset cityscapes background'
+      alt: 'sunset cityscapes background'
    },
    {
       title: '18 Days Voyage',
@@ -90,7 +90,7 @@ export const StoryCardsContent = [
       mobileImg: daysStoryCardImgMobile,
       tabletImg: daysStoryCardImgTablet,
       desktopImg: daysStoryCardImgDesktop,
-      atl: 'person walking with backpack on with sunset behind'
+      alt: 'person walking with backpack on with sunset behind'
    },
    {
       title: 'Architecturals',

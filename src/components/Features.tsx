@@ -1,5 +1,5 @@
 import React from 'react';
-import { FeaturesContent } from '../../Models';
+import { FeaturesContent } from '../Models';
 
 const Features = () => {
    console.log(FeaturesContent)

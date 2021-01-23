@@ -1,7 +1,7 @@
 import React from 'react';
-import arrow from '../../assets/shared/desktop/arrow.svg';
-import arrowBlack from '../../assets/shared/desktop/arrow-black.svg';
-import { HomeSectionContent } from '../../Models';
+import arrow from '../assets/shared/desktop/arrow.svg';
+import arrowBlack from '../assets/shared/desktop/arrow-black.svg';
+import { HomeSectionContent } from '../Models';
 
 const Section = () => {
    return (

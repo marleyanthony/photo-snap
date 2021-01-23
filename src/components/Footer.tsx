@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FooterLinks, FooterSocialIcons } from '../../Models';
-import arrow from '../../assets/shared/desktop/arrow.svg';
-import Logo from '../../assets/logo-white.svg';
+import { FooterLinks, FooterSocialIcons } from '../Models';
+import arrow from '../assets/shared/desktop/arrow.svg';
+import Logo from '../assets/logo-white.svg';
 
 
 const Footer = () => {

@@ -1,9 +1,9 @@
 import React from 'react';
-import Header from './reusable/Header';
-import Section from './Home/Section';
-import StoryCard from './Home/StoryCard';
-import Features from './Home/Features';
-import Footer from './reusable/Footer';
+import Header from './Header';
+import Section from './Section';
+import StoryCard from './StoryCard';
+import Features from './Features';
+import Footer from './Footer';
 
 const Home = () => {
    return (

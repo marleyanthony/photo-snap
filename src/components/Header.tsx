@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../../assets/logo.svg';
-import { NavItems } from '../../Models';
+import Logo from '../assets/logo.svg';
+import { NavItems } from '../Models';
 
 const Header = () => {
    const [showNav, setShowNav] = useState(false);
@@ -14,9 +14,10 @@ const Header = () => {
    return (
       <div className="header">
          <div className="header__nav-wrapper">
-            <img src={Logo} alt="site logo" className="header__logo" />
+            <Link to="/">
+               <img src={Logo} alt="site logo" className="header__logo" />
+            </Link>
             <button
-               href='#'
                aria-label='hamburger nav'
                className={
                   showNav

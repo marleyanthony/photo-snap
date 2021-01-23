@@ -1,6 +1,6 @@
 import React from 'react';
-import arrow from '../../assets/shared/desktop/arrow.svg';
-import { StoryCardsContent } from '../../Models';
+import arrow from '../assets/shared/desktop/arrow.svg';
+import { StoryCardsContent } from '../Models';
 
 const StoryCard = () => {
    console.log(StoryCardsContent)
