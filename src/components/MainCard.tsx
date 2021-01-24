@@ -11,7 +11,7 @@ type MainCardProps = {
       alt: string,
       header: string,
       info: string,
-      buttonText: string,
+      buttonText?: string,
       sectionClass?: string,
       buttonClass?: string,
       lastMonth?: string,
@@ -45,13 +45,20 @@ const MainCard: React.FC<MainCardProps> = ({ content }) => {
                               {section.date}
                            </p>
                            <p className="main-card__author">
-                              by {section.author}
+                              {section.author}
                            </p>
                         </div>
                         <p className="main-card__content-info">
                            {section.info}
                         </p>
-                        <button className={section.buttonClass}>
+                        <button
+                           className={section.buttonClass}
+                           style={
+                              section.header === 'Features'
+                                 ? { display: 'none' }
+                                 : { display: 'block' }
+                           }
+                        >
                            {section.buttonText}
                            {
                               section.buttonText === 'Get An Invite' || 'Read The Story'

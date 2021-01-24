@@ -20,7 +20,7 @@ import daysStoryCardImgDesktop from '../assets/stories/desktop/18-days-voyage.jp
 import architecturalsCardImgMobile from '../assets/stories/mobile/architecturals.jpg';
 import architecturalsCardImgTablet from '../assets/stories/desktop/architecturals.jpg';
 import architecturalsCardImgDesktop from '../assets/stories/desktop/architecturals.jpg';
-// ! advantages icons 
+// ! features icons 
 import responsiveIcon from '../assets/features/desktop/responsive.svg';
 import limitIcon from '../assets/features/desktop/no-limit.svg';
 import embedIcon from '../assets/features/desktop/embed.svg';
@@ -105,7 +105,7 @@ export const HomeStoryCardsContent = [
 
 
 // ! features 
-export const FeaturesContent = [
+export const HomeFeaturesContent = [
    {
       icon: responsiveIcon,
       title: '100% Responsive',

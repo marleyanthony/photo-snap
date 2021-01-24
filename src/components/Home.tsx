@@ -4,7 +4,7 @@ import MainCard from './MainCard';
 import StoryCard from './StoryCard';
 import Features from './Features';
 import Footer from './Footer';
-import { HomeSectionContent, HomeStoryCardsContent } from '../Models';
+import { HomeSectionContent, HomeStoryCardsContent, HomeFeaturesContent } from '../Models';
 
 const Home = () => {
    return (
@@ -12,7 +12,7 @@ const Home = () => {
          <Header />
          <MainCard content={HomeSectionContent} />
          <StoryCard content={HomeStoryCardsContent} />
-         <Features />
+         <Features content={HomeFeaturesContent} />
          <Footer />
       </div>
    )
