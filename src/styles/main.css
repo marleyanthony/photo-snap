@@ -378,6 +378,148 @@
   line-height: 2.5rem;
 }
 
+.pricing-options__sub-type-wrapper {
+  padding: 6.4rem 3.9rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 75%;
+}
+
+.pricing-options__switch {
+  position: relative;
+  display: inline-block;
+  width: 6rem;
+  height: 3.4rem;
+}
+
+.pricing-options__slider-checkbox {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  cursor: pointer;
+}
+
+.pricing-options__slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #dfdfdf;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.pricing-options__slider::before {
+  position: absolute;
+  content: "";
+  height: 2.6rem;
+  width: 2.6rem;
+  left: 0.4rem;
+  bottom: 0.4rem;
+  background-color: #000000;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.pricing-options__slider-checkbox:checked + .pricing-options__slider {
+  background-color: green;
+}
+
+.pricing-options__slider {
+  border-radius: 3.4rem;
+}
+
+.pricing-options__round::before {
+  border-radius: 50%;
+}
+
+.pricing-options__sub-type {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+}
+
+.pricing-options__card {
+  text-align: center;
+  padding: 4.2rem 2.1rem;
+  height: 40.7rem;
+}
+
+.pricing-options__card--black {
+  background-color: #000000;
+}
+
+.pricing-options__card-header {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  margin-bottom: 1.8rem;
+}
+
+.pricing-options__card-header--white {
+  color: #fff;
+}
+
+.pricing-options__card-summary {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+.pricing-options__card-summary--white {
+  color: #fff;
+}
+
+.pricing-options__card-price {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 4.8rem;
+  letter-spacing: 0.4rem;
+}
+
+.pricing-options__card-price--white {
+  color: #fff;
+}
+
+.pricing-options__card-sub-type {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+}
+
+.pricing-options__card-sub-type--white {
+  color: #fff;
+}
+
+.pricing-options__cta-btn {
+  padding: 1.2rem 3.7rem;
+  width: 24.5rem;
+  margin-top: 4rem;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.6rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: #fff;
+}
+
+.pricing-options__cta-btn--black {
+  background-color: #000000;
+  color: #fff;
+}
+
 * {
   margin: 0;
   padding: 0;

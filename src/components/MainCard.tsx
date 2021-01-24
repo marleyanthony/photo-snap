@@ -54,7 +54,7 @@ const MainCard: React.FC<MainCardProps> = ({ content }) => {
                         <button
                            className={section.buttonClass}
                            style={
-                              section.header === 'Features'
+                              section.header === 'Features' || 'Pricing'
                                  ? { display: 'none' }
                                  : { display: 'block' }
                            }
