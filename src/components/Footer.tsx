@@ -22,7 +22,7 @@ const Footer = () => {
             {
                FooterLinks.map((link, item) => {
                   return (
-                     <Link to={link.label} key={item} className="footer__page-link">
+                     <Link to={link.link} key={item} className="footer__page-link">
                         {link.label}
                      </Link>
                   )
