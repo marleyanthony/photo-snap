@@ -8,7 +8,7 @@ type StoryCardProps = {
       title: string,
       author: string,
       mobileImg: string,
-      tabletImg: string,
+      tabletImg?: string,
       desktopImg: string,
       alt: string
    }[]
@@ -29,6 +29,9 @@ const StoryCard: React.FC<StoryCardProps> = ({ content }) => {
                         <div className="story-card__img-overlay"></div>
                      </div>
                      <div className="story-card__card-content-wrapper">
+                        <p className="story-card__date">
+                           {card.date}
+                        </p>
                         <h5 className="story-card__card-title">
                            {card.title}
                         </h5>
