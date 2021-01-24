@@ -1,15 +1,16 @@
 import React from 'react';
 import Header from './Header';
-import Section from './Section';
+import MainCard from './MainCard';
 import StoryCard from './StoryCard';
 import Features from './Features';
 import Footer from './Footer';
+import { HomeSectionContent } from '../Models';
 
 const Home = () => {
    return (
       <div className="home-page">
          <Header />
-         <Section />
+         <MainCard content={HomeSectionContent} />
          <StoryCard />
          <Features />
          <Footer />

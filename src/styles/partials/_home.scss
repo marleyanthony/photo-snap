@@ -1,5 +1,5 @@
 // ! home-section 
-.home-section {
+.main-card {
    overflow: hidden;
    padding: 7.2rem 3.3rem;
 
@@ -12,6 +12,10 @@
       display: block;
    }
 
+   &__featured {
+      margin-bottom: 1.6rem;
+   }
+
    &__content-header {
       font-size: 3.2rem;
       font-weight: 700;
@@ -20,6 +24,20 @@
       text-align: left;
       text-transform: uppercase;
       margin-bottom: 1.6rem;
+   }
+
+   &__date-author-wrapper {
+      margin-bottom: 1.6rem;
+      display: flex;
+      align-items: center;
+   }
+
+   &__date {
+      margin-right: 0.9rem;
+   }
+
+   &__author {
+      font-weight: bold;
    }
 
    &__content-info {

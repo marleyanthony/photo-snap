@@ -190,21 +190,25 @@
   line-height: 20px;
 }
 
-.home-section {
+.main-card {
   overflow: hidden;
   padding: 7.2rem 3.3rem;
 }
 
-.home-section--black {
+.main-card--black {
   background-color: #000000;
   color: #fff;
 }
 
-.home-section__img {
+.main-card__img {
   display: block;
 }
 
-.home-section__content-header {
+.main-card__featured {
+  margin-bottom: 1.6rem;
+}
+
+.main-card__content-header {
   font-size: 3.2rem;
   font-weight: 700;
   line-height: 4rem;
@@ -214,7 +218,25 @@
   margin-bottom: 1.6rem;
 }
 
-.home-section__content-info {
+.main-card__date-author-wrapper {
+  margin-bottom: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-card__date {
+  margin-right: 0.9rem;
+}
+
+.main-card__author {
+  font-weight: bold;
+}
+
+.main-card__content-info {
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 2.5rem;
@@ -222,7 +244,7 @@
   margin-bottom: 2.3rem;
 }
 
-.home-section__cta {
+.main-card__cta {
   font-size: 1.2rem;
   font-weight: 700;
   line-height: 1.6rem;
@@ -239,11 +261,11 @@
           align-items: center;
 }
 
-.home-section__cta--white {
+.main-card__cta--white {
   color: #fff;
 }
 
-.home-section__cta-arrow {
+.main-card__cta-arrow {
   margin-left: 1.8rem;
 }
 
