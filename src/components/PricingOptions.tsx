@@ -25,13 +25,15 @@ const PricingOptions: React.FC<PricingOptionsProps> = ({ content }) => {
             <p className="pricing-options__sub-type">
                Monthly
             </p>
-            <div
-               className="pricing-options__switch"
-               onClick={changeSubType}
-            >
-               <input type="checkbox" className="pricing-options__slider-checkbox" />
+            <label htmlFor="toggle" className="pricing-options__switch">
+               <input
+                  type="checkbox"
+                  className="pricing-options__slider-checkbox"
+                  onClick={changeSubType}
+                  id="toggle"
+               />
                <span className="pricing-options__slider pricing-options__round"></span>
-            </div>
+            </label>
             <p className="pricing-options__sub-type">
                Yearly
             </p>

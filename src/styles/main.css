@@ -201,7 +201,7 @@
 }
 
 .main-card__img {
-  display: block;
+  display: block !important;
 }
 
 .main-card__featured {
@@ -431,8 +431,19 @@
   transition: 0.4s;
 }
 
+.pricing-options__slider-checkbox:checked + .pricing-options__slider::before {
+  -webkit-transform: translateX(2.6rem);
+          transform: translateX(2.6rem);
+  background-color: #fff;
+}
+
 .pricing-options__slider-checkbox:checked + .pricing-options__slider {
-  background-color: green;
+  background-color: #000000;
+}
+
+.pricing-options__slider-checkbox:focus {
+  outline: 0;
+  border: 1px solid red;
 }
 
 .pricing-options__slider {

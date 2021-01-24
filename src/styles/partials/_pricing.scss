@@ -45,8 +45,20 @@
       }
    }
 
+   &__slider-checkbox:checked+&__slider::before {
+      transform: translateX(2.6rem);
+      background-color: #fff;
+   }
+
    &__slider-checkbox:checked+&__slider {
-      background-color: green;
+      background-color: #000000;
+   }
+
+   &__slider-checkbox {
+      &:focus {
+         outline: 0;
+         border: 1px solid red;
+      }
    }
 
    &__slider {
