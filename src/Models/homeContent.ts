@@ -33,7 +33,7 @@ export const HomeSectionContent = [
       imgTablet: createImgTablet,
       imgDesktop: createImgDesktop,
       alt: 'man standing on dock with a camera in hand',
-      header: 'Creat and share your photo stories',
+      header: 'Create and share your photo stories',
       info: 'Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others.',
       buttonText: 'Get An Invite',
       sectionClass: 'main-card main-card--black',

@@ -6,6 +6,41 @@
    &--black {
       background-color: #000000;
       color: #fff;
+
+      @include tablet-portrait {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         padding: 7.2rem 0;
+      }
+   }
+
+   @include tablet-portrait {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 5.4rem;
+   }
+
+   @include tablet-portrait {
+      &__card-wrapper {
+         display: flex;
+
+         &--reverse {
+            flex-direction: row-reverse;
+         }
+      }
+   }
+
+   @include tablet-portrait {
+      &__wrapper {
+         &--gradient-border {
+            padding: 0 5.4rem;
+            border-left: 4px solid;
+            border-image-source: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
+            border-image-slice: 1;
+         }
+      }
    }
 
    &__img {
