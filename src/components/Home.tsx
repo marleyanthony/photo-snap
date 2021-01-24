@@ -4,14 +4,14 @@ import MainCard from './MainCard';
 import StoryCard from './StoryCard';
 import Features from './Features';
 import Footer from './Footer';
-import { HomeSectionContent } from '../Models';
+import { HomeSectionContent, HomeStoryCardsContent } from '../Models';
 
 const Home = () => {
    return (
       <div className="home-page">
          <Header />
          <MainCard content={HomeSectionContent} />
-         <StoryCard />
+         <StoryCard content={HomeStoryCardsContent} />
          <Features />
          <Footer />
       </div>

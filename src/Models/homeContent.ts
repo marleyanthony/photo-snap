@@ -67,7 +67,7 @@ export const HomeSectionContent = [
 
 
 // ! story cards
-export const StoryCardsContent = [
+export const HomeStoryCardsContent = [
    {
       title: 'The Mountains',
       author: 'John Appleseed',
@@ -98,7 +98,7 @@ export const StoryCardsContent = [
       mobileImg: architecturalsCardImgMobile,
       tabletImg: architecturalsCardImgTablet,
       desktopImg: architecturalsCardImgDesktop,
-      atl: 'Architectural building'
+      alt: 'Architectural building'
    },
 ]
 

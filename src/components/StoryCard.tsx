@@ -1,13 +1,25 @@
 import React from 'react';
 import arrow from '../assets/shared/desktop/arrow.svg';
-import { StoryCardsContent } from '../Models';
+// import { StoryCardsContent } from '../Models';
 
-const StoryCard = () => {
-   console.log(StoryCardsContent)
+type StoryCardProps = {
+   content: {
+      date?: string,
+      title: string,
+      author: string,
+      mobileImg: string,
+      tabletImg: string,
+      desktopImg: string,
+      alt: string
+   }[]
+}
+
+const StoryCard: React.FC<StoryCardProps> = ({ content }) => {
+   console.log(content)
    return (
       <div className="story-card">
          {
-            StoryCardsContent.map((card, index) => {
+            content.map((card, index) => {
                return (
                   <div className="story-card__card-wrapper" key={index}>
                      <div className="story-card__card-img-wrapper">
