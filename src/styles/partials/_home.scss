@@ -233,17 +233,28 @@
    text-align: center;
    padding: 8rem 3.2rem;
 
+   @include tablet-portrait {
+      display: grid;
+      grid-area: area;
+      grid-template-areas: 'area area';
+   }
+
    &__wrapper {
       padding: 0 3rem;
       margin-bottom: 5.6rem;
 
       @include tablet-portrait {
-         width: 75%;
+         width: 100%;
       }
    }
 
    &__icon {
       margin-bottom: 4.8rem;
+
+      @include tablet-portrait {
+         height: 5rem;
+         width: auto;
+      }
    }
 
    &__title {

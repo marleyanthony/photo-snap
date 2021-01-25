@@ -46,7 +46,9 @@ const MainCard: React.FC<MainCardProps> = ({ content }) => {
                         <div className={
                            section.header === 'Create and share your photo stories'
                               ? 'main-card__wrapper main-card__wrapper--gradient-border'
-                              : 'main-card__wrapper'
+                              : section.header === 'Features'
+                                 ? 'main-card__wrapper main-card__wrapper--gradient-border'
+                                 : 'main-card__wrapper'
                         }
                         >
                            <p className="main-card__featured">
