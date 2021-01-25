@@ -48,7 +48,9 @@ const MainCard: React.FC<MainCardProps> = ({ content }) => {
                               ? 'main-card__wrapper main-card__wrapper--gradient-border'
                               : section.header === 'Features'
                                  ? 'main-card__wrapper main-card__wrapper--gradient-border'
-                                 : 'main-card__wrapper'
+                                 : section.header === 'Pricing'
+                                    ? 'main-card__wrapper main-card__wrapper--gradient-border'
+                                    : 'main-card__wrapper'
                         }
                         >
                            <p className="main-card__featured">

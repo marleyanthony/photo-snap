@@ -47,49 +47,55 @@ const PricingOptions: React.FC<PricingOptionsProps> = ({ content }) => {
                            ? 'pricing-options__card pricing-options__card--black'
                            : 'pricing-options__card'
                      }
-                        key={index}>
-                        <h3 className={
-                           card.name === 'Pro'
-                              ? 'pricing-options__card-header pricing-options__card-header--white'
-                              : 'pricing-options__card-header'
-                        }
-                        >
-                           {card.name}
-                        </h3>
-                        <p className={
-                           card.name === 'Pro'
-                              ? 'pricing-options__card-summary pricing-options__card-summary--white'
-                              : 'pricing-options__card-summary'
-                        }
-                        >
-                           {card.summary}
-                        </p>
-                        <p className={
-                           card.name === 'Pro'
-                              ? 'pricing-options__card-price pricing-options__card-price--white'
-                              : 'pricing-options__card-price'
-                        }
-                        >
-                           {
-                              monthSubType === true
-                                 ? card.priceMonth
-                                 : card.priceYear
+                        key={index}
+                     >
+                        <div className="pricing-options__left-side-wrapper">
+                           <h3 className={
+                              card.name === 'Pro'
+                                 ? 'pricing-options__card-header pricing-options__card-header--white'
+                                 : 'pricing-options__card-header'
                            }
-                        </p>
-                        <p className={
-                           card.name === 'Pro'
-                              ? 'pricing-options__card-sub-type pricing-options__card-sub-type--white'
-                              : 'pricing-options__card-sub-type'
-                        }>
-                           {
-                              monthSubType === true
-                                 ? card.subTypeMonth
-                                 : card.subTypeYear
+                           >
+                              {card.name}
+                           </h3>
+                           <p className={
+                              card.name === 'Pro'
+                                 ? 'pricing-options__card-summary pricing-options__card-summary--white'
+                                 : 'pricing-options__card-summary'
                            }
-                        </p>
-                        <button className={card.buttonClass}>
-                           Pick Plan
-                        </button>
+                           >
+                              {card.summary}
+                           </p>
+                        </div>
+
+                        <div className="pricing-options__right-side-wrapper">
+                           <p className={
+                              card.name === 'Pro'
+                                 ? 'pricing-options__card-price pricing-options__card-price--white'
+                                 : 'pricing-options__card-price'
+                           }
+                           >
+                              {
+                                 monthSubType === true
+                                    ? card.priceMonth
+                                    : card.priceYear
+                              }
+                           </p>
+                           <p className={
+                              card.name === 'Pro'
+                                 ? 'pricing-options__card-sub-type pricing-options__card-sub-type--white'
+                                 : 'pricing-options__card-sub-type'
+                           }>
+                              {
+                                 monthSubType === true
+                                    ? card.subTypeMonth
+                                    : card.subTypeYear
+                              }
+                           </p>
+                           <button className={card.buttonClass}>
+                              Pick Plan
+                           </button>
+                        </div>
                      </div>
                   )
                })

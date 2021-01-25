@@ -3,12 +3,13 @@ import { FeaturesPageHeroContent, FeaturesPageFeaturesContent } from '../Models'
 import Header from './Header';
 import MainCard from './MainCard';
 import Features from './Features';
+import FeaturesTable from './FeaturesTable';
 import Footer from './Footer';
 
 const FeaturesPage = () => {
-   useEffect(() => {
-      window.scrollTo(0, 0);
-   }, [])
+   // useEffect(() => {
+   //    window.scrollTo(0, 0);
+   // }, [])
 
    return (
       <div className="features-page">

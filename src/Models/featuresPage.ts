@@ -8,6 +8,9 @@ import embedIcon from '../assets/features/desktop/embed.svg';
 import customDomainIcon from '../assets/features/desktop/custom-domain.svg';
 import exposureIcon from '../assets/features/desktop/boost-exposure.svg';
 import dragIcon from '../assets/features/desktop/drag-drop.svg';
+// ! features table 
+import featuresTableCheck from '../assets/check.svg';
+import featuresTableNone from '../assets/close.svg';
 
 
 export const FeaturesPageHeroContent = [
@@ -61,5 +64,60 @@ export const FeaturesPageFeaturesContent = [
       title: 'Drag & Drop Icon',
       summary: `Easily drag and drop your image and get beautiful shots everytime. No over the top tooling to add friction to creating stories.`,
       alt: 'drag and drop icon'
+   },
+]
+
+
+
+
+// ! features table 
+export const FeaturesTableContent = [
+   {
+      heading: 'Unlimited Story Posting',
+      basicCheck: featuresTableCheck,
+      proCheck: featuresTableCheck,
+      businessCheck: featuresTableCheck
+   },
+   {
+      heading: 'Unlimited Photo Upload',
+      basicCheck: featuresTableCheck,
+      proCheck: featuresTableCheck,
+      businessCheck: featuresTableCheck
+   },
+   {
+      heading: 'Embedding Custom Content',
+      basicCheck: featuresTableNone,
+      proCheck: featuresTableCheck,
+      businessCheck: featuresTableCheck
+   },
+   {
+      heading: 'Customize Metadata',
+      basicCheck: featuresTableNone,
+      proCheck: featuresTableCheck,
+      businessCheck: featuresTableCheck
+   },
+   {
+      heading: 'Advanced Metrics',
+      basicCheck: featuresTableNone,
+      proCheck: featuresTableNone,
+      businessCheck: featuresTableCheck
+   },
+   {
+      heading: 'Photo Downloads',
+      basicCheck: featuresTableNone,
+      proCheck: featuresTableNone,
+      businessCheck: featuresTableCheck
+   },
+   {
+      heading: 'Search Engine Optimization',
+      basicCheck: featuresTableNone,
+      proCheck: featuresTableNone,
+      businessCheck: featuresTableCheck
+   },
+   {
+      heading: 'Custom Analytics',
+      basicCheck: featuresTableNone,
+      proCheck: featuresTableNone,
+      businessCheck: featuresTableCheck
    },
 ]

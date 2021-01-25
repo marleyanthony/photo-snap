@@ -24,7 +24,7 @@ import architecturalsCardImgDesktop from '../assets/stories/desktop/architectura
 import responsiveIcon from '../assets/features/desktop/responsive.svg';
 import limitIcon from '../assets/features/desktop/no-limit.svg';
 import embedIcon from '../assets/features/desktop/embed.svg';
-
+import customDomainIcon from '../assets/features/desktop/custom-domain.svg';
 
 // ! home section content
 export const HomeSectionContent = [
@@ -124,4 +124,10 @@ export const HomeFeaturesContent = [
       summary: `Embed Tweets, Facebook posts, Instagram media, Vimeo or Youtube videos, Google Maps and more.`,
       alt: 'available to embed icon'
    },
+   {
+      icon: customDomainIcon,
+      title: 'Custom Domain',
+      summary: `With Photosnap subscriptions you can host your stories on your own domain. You can also remove our branding!`,
+      alt: 'custom domain icon'
+   }
 ]

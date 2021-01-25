@@ -640,6 +640,13 @@
   width: 75%;
 }
 
+@media (min-width: 600px) {
+  .pricing-options__sub-type-wrapper {
+    width: 45%;
+    padding-bottom: 0;
+  }
+}
+
 .pricing-options__switch {
   position: relative;
   display: inline-block;
@@ -690,7 +697,6 @@
 
 .pricing-options__slider-checkbox:focus {
   outline: 0;
-  border: 1px solid red;
 }
 
 .pricing-options__slider {
@@ -717,6 +723,28 @@
   background-color: #000000;
 }
 
+@media (min-width: 600px) {
+  .pricing-options__card {
+    padding-top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 600px) {
+  .pricing-options__left-side-wrapper {
+    width: 50%;
+    padding: 0 4rem 0;
+  }
+}
+
 .pricing-options__card-header {
   font-size: 2.4rem;
   font-weight: 700;
@@ -737,6 +765,12 @@
 
 .pricing-options__card-summary--white {
   color: #fff;
+}
+
+@media (min-width: 600px) {
+  .pricing-options__card-summary {
+    margin-bottom: 0;
+  }
 }
 
 .pricing-options__card-price {
@@ -776,6 +810,68 @@
 .pricing-options__cta-btn--black {
   background-color: #000000;
   color: #fff;
+}
+
+.features-table {
+  padding: 0 2.9rem;
+}
+
+.features-table__table-header, .features-table__heading {
+  font-family: DM Sans;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.6rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.features-table__table-header {
+  padding-bottom: 2.3rem;
+  margin-bottom: 2.3rem;
+  border-bottom: 1px solid black;
+}
+
+.features-table__heading {
+  margin-bottom: 1.6rem;
+}
+
+.features-table__tier-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2.4rem;
+  padding-bottom: 2.4rem;
+  border-bottom: 1px solid #DFDFDF;
+}
+
+.features-table__tier {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0 1rem;
+}
+
+.features-table__tier-heading {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.3rem;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
 }
 
 * {
