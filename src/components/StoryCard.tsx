@@ -1,6 +1,5 @@
 import React from 'react';
 import arrow from '../assets/shared/desktop/arrow.svg';
-// import { StoryCardsContent } from '../Models';
 
 type StoryCardProps = {
    content: {
@@ -23,9 +22,7 @@ const StoryCard: React.FC<StoryCardProps> = ({ content }) => {
                return (
                   <div className="story-card__card-wrapper" key={index}>
                      <div className="story-card__card-img-wrapper">
-                        <picture>
-                           <img src={card.mobileImg} alt={card.alt} className="story-card__card-bg-img" />
-                        </picture>
+                        <img src={card.mobileImg} alt={card.alt} className="story-card__card-bg-img" />
                         <div className="story-card__img-overlay"></div>
                      </div>
                      <div className="story-card__card-content-wrapper">

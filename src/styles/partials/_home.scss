@@ -110,6 +110,11 @@
 
 // ! story card 
 .story-card {
+   @include tablet-portrait {
+      display: flex;
+      flex-wrap: wrap;
+   }
+
    &__card-wrapper {
       position: relative;
    }
@@ -132,6 +137,10 @@
       right: 0;
       z-index: 1;
       background: rgba(0, 0, 0, 0.5);
+
+      @include tablet-portrait {
+         display: none;
+      }
    }
 
    &__card-content-wrapper {

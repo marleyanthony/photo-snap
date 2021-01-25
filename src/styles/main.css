@@ -124,6 +124,37 @@
   text-align: center;
 }
 
+@media (min-width: 600px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 28.4rem;
+    text-align: unset;
+  }
+}
+
+@media (min-width: 600px) {
+  .footer__right-flex-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
 .footer__logo {
   margin-bottom: 3.2rem;
 }
@@ -137,6 +168,12 @@
           justify-content: space-between;
   width: 50%;
   margin: 0 auto 5.5rem;
+}
+
+@media (min-width: 600px) {
+  .footer__social-icon-wrapper {
+    margin: 0;
+  }
 }
 
 .footer__pages-wrapper {
@@ -153,6 +190,15 @@
   margin: 8rem 0 6rem;
 }
 
+@media (min-width: 600px) {
+  .footer__pages-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .footer__page-link {
   color: #fff;
   text-decoration: none;
@@ -162,6 +208,12 @@
   line-height: 1.6rem;
   letter-spacing: 2px;
   margin-bottom: 1.9rem;
+}
+
+@media (min-width: 600px) {
+  .footer__page-link {
+    margin-right: 1rem;
+  }
 }
 
 .footer__cta {
@@ -177,6 +229,12 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   margin: 0 auto 3.4rem;
+}
+
+@media (min-width: 600px) {
+  .footer__cta {
+    margin: 0;
+  }
 }
 
 .footer__arrow-icon {
@@ -324,6 +382,16 @@
   margin-left: 1.8rem;
 }
 
+@media (min-width: 600px) {
+  .story-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .story-card__card-wrapper {
   position: relative;
 }
@@ -346,6 +414,12 @@
   right: 0;
   z-index: 1;
   background: rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 600px) {
+  .story-card__img-overlay {
+    display: none;
+  }
 }
 
 .story-card__card-content-wrapper {
