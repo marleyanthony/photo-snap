@@ -32,7 +32,9 @@ const MainCard: React.FC<MainCardProps> = ({ content }) => {
                         ? 'main-card__card-wrapper main-card__card-wrapper--reverse'
                         : section.header === 'Designed for everyone'
                            ? 'main-card__card-wrapper main-card__card-wrapper--reverse'
-                           : 'main-card__card-wrapper'
+                           : section.header === 'HAZY FULL MOON OF APPALACHIA'
+                              ? 'main-card__card-wrapper main-card__card-wrapper--stories-page'
+                              : 'main-card__card-wrapper'
                   }
                      key={index}>
                      <picture>
@@ -76,9 +78,11 @@ const MainCard: React.FC<MainCardProps> = ({ content }) => {
                            >
                               {section.buttonText}
                               {
-                                 section.buttonText === ('Get An Invite' || 'Read The Story')
+                                 section.buttonText === 'Get An Invite'
                                     ? <img src={arrow} alt="arrow" className="main-card__cta-arrow" />
-                                    : <img src={arrowBlack} alt="arrow" className="main-card__cta-arrow" />
+                                    : section.buttonText === 'Read The Story'
+                                       ? <img src={arrow} alt="arrow" className="main-card__cta-arrow" />
+                                       : <img src={arrowBlack} alt="arrow" className="main-card__cta-arrow" />
                               }
                            </button>
                         </div>

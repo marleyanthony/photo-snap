@@ -48,7 +48,7 @@ export const StoryPageHeaderContent = [
       author: 'John Appleseed',
       info: 'The dissected plateau area, while not actually made up of geological mountains, is popularly called "mountains," especially in eastern Kentucky and West Virginia, and while the ridges are not high, the terrain is extremely rugged.',
       buttonText: 'Read The Story',
-      sectionClass: 'main-card main-card--black',
+      sectionClass: 'main-card main-card--black main-card--stories-page',
       buttonClass: 'main-card__cta main-card__cta--white'
    }
 ]

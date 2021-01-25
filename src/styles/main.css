@@ -339,16 +339,35 @@
 }
 
 @media (min-width: 600px) {
+  .main-card--stories-page {
+    background-color: transparent;
+    position: absolute;
+    top: 170px;
+    left: 39px;
+    width: 45%;
+  }
+}
+
+@media (min-width: 600px) {
   .main-card__card-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
+}
+
+@media (min-width: 600px) {
   .main-card__card-wrapper--reverse {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
+  }
+}
+
+@media (min-width: 600px) {
+  .main-card__card-wrapper--stories-page {
+    display: unset;
   }
 }
 
@@ -367,6 +386,14 @@
 
 .main-card__featured {
   margin-bottom: 1.6rem;
+  letter-spacing: 2px;
+}
+
+@media (min-width: 600px) {
+  .main-card__featured {
+    font-size: 1.2rem;
+    margin-bottom: 2.4rem;
+  }
 }
 
 .main-card__content-header {
@@ -389,12 +416,30 @@
           align-items: center;
 }
 
+@media (min-width: 600px) {
+  .main-card__date-author-wrapper {
+    margin-bottom: 2.4rem;
+  }
+}
+
 .main-card__date {
   margin-right: 0.9rem;
 }
 
+@media (min-width: 600px) {
+  .main-card__date {
+    font-size: 1.3rem;
+  }
+}
+
 .main-card__author {
   font-weight: bold;
+}
+
+@media (min-width: 600px) {
+  .main-card__author {
+    font-size: 1.3rem;
+  }
 }
 
 .main-card__content-info {
