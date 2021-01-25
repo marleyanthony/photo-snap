@@ -5,6 +5,7 @@ import { NavItems } from '../Models';
 
 const Header = () => {
    const [showNav, setShowNav] = useState(false);
+   // const [responsiveNav, setResponsiveNav] = useState(true);
 
    const toggleNav = () => {
       setShowNav(!showNav);
@@ -61,6 +62,28 @@ const Header = () => {
                   Get An Invite
             </button>
             </div>
+         </section>
+
+         {/* // ! tablet & desktop nav */}
+         <section
+            className="header__nav"
+         >
+            {
+               NavItems.map((navItem, index) => {
+                  return (
+                     <Link
+                        to={navItem.link}
+                        key={index}
+                        className="header__nav-item header__nav-item--tablet"
+                     >
+                        {navItem.label}
+                     </Link>
+                  )
+               })
+            }
+            <button className="header__nav-cta-btn">
+               Get an Invite
+            </button>
          </section>
       </div>
    )

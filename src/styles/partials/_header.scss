@@ -1,4 +1,31 @@
 .header {
+   @include tablet-portrait {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   &__nav {
+      display: none;
+
+      @include tablet-portrait {
+         display: unset;
+         margin-right: 4rem;
+      }
+   }
+
+   &__nav-cta-btn {
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: 700;
+      line-height: 1.6rem;
+      letter-spacing: 2px;
+      padding: 1.2rem 2.4rem;
+      border: none;
+      background-color: #000000;
+   }
+
    &__logo {
       padding: 3.5rem 1.5rem;
    }
@@ -13,6 +40,12 @@
       letter-spacing: 2.5px;
       text-align: center;
       margin-bottom: 2rem;
+
+      &--tablet {
+         @include tablet-portrait {
+            margin-right: 3.7rem;
+         }
+      }
    }
 
    &__hamburger-btn {
@@ -26,6 +59,10 @@
       border: none;
       background-color: transparent;
       z-index: 10;
+
+      @include tablet-portrait {
+         display: none;
+      }
 
       &:focus {
          outline: none;
