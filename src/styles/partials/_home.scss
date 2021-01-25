@@ -19,7 +19,6 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 0 5.4rem;
    }
 
    @include tablet-portrait {
@@ -201,6 +200,10 @@
    &__wrapper {
       padding: 0 3rem;
       margin-bottom: 5.6rem;
+
+      @include tablet-portrait {
+         width: 75%;
+      }
    }
 
    &__icon {

@@ -286,7 +286,6 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 0 5.4rem;
   }
 }
 
@@ -488,6 +487,12 @@
 .features__wrapper {
   padding: 0 3rem;
   margin-bottom: 5.6rem;
+}
+
+@media (min-width: 600px) {
+  .features__wrapper {
+    width: 75%;
+  }
 }
 
 .features__icon {
