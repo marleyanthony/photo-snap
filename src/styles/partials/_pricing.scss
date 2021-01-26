@@ -79,6 +79,14 @@
       line-height: 2.5rem;
    }
 
+   &__card-wrapper {
+      @include desktop {
+         display: flex;
+         width: 75%;
+         margin: 8rem auto 16rem;
+      }
+   }
+
    &__card {
       text-align: center;
       padding: 4.2rem 2.1rem;
@@ -98,6 +106,23 @@
          margin: 4rem auto;
          height: 27rem;
       }
+
+      @include desktop {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         height: 40.7rem;
+         text-align: center;
+         margin: 4rem 1.5rem 0 1.5rem;
+      }
+
+      &--black {
+         @include desktop {
+            height: 47rem;
+            margin-top: 0;
+         }
+      }
    }
 
    &__left-side-wrapper {
@@ -105,6 +130,12 @@
          width: 50%;
          padding: 0 4rem 0 0;
          text-align: left;
+      }
+
+      @include desktop {
+         padding: 0;
+         text-align: center;
+         width: 100%;
       }
    }
 
@@ -131,6 +162,10 @@
 
       @include tablet-portrait {
          margin-bottom: 0;
+      }
+
+      @include desktop {
+         margin-bottom: 4rem;
       }
    }
 
@@ -180,6 +215,10 @@
 
    @include tablet-portrait {
       padding: 0 4rem 4rem;
+   }
+
+   @include desktop {
+      padding: 0 35.4rem 16rem;
    }
 
    &__compare-heading {
