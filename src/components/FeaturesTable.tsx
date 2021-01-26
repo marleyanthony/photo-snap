@@ -12,16 +12,34 @@ type FeaturesTableProps = {
 const FeaturesTable: React.FC<FeaturesTableProps> = ({ content }) => {
    return (
       <section className="features-table">
-         <h4 className="features-table__table-header">
-            The Features
-         </h4>
+         <h5 className="features-table__compare-heading">
+            Compare
+         </h5>
+         <div className="features-table__tablet-flex-wrapper">
+            <h4 className="features-table__table-header">
+               The Features
+            </h4>
+            <div className="features-table__tier-label-wrapper">
+               <h5 className="features-table__tier-heading features-table__tier-heading--tablet">
+                  Basic
+               </h5>
+               <h5 className="features-table__tier-heading features-table__tier-heading--tablet">
+                  Pro
+               </h5>
+               <h5 className="features-table__tier-heading features-table__tier-heading--tablet">
+                  Business
+               </h5>
+            </div>
+         </div>
          {
             content.map((feature, index) => {
                return (
                   <div className="features-table__row" key={index}>
-                     <h5 className="features-table__heading">
-                        {feature.heading}
-                     </h5>
+                     <div className="features-table__heading-wrapper">
+                        <h5 className="features-table__heading">
+                           {feature.heading}
+                        </h5>
+                     </div>
                      <div className="features-table__tier-wrapper">
                         <div className="features-table__tier">
                            <h5 className="features-table__tier-heading">
