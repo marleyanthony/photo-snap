@@ -1,6 +1,6 @@
 {
   "homepage": "http://marleyanthony.github.io/photo-snap",
-  "name": "portfolio-v3",
+  "name": "photo-snap",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
