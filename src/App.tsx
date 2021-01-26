@@ -7,7 +7,7 @@ import Pricing from './components/PricingPage';
 
 function App() {
    return (
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
          <Route exact path="/" component={Home} />
          <Route exact path="/stories" component={Stories} />
          <Route exact path="/features" component={Features} />
