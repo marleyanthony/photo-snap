@@ -37,7 +37,7 @@ const Footer = () => {
                <img src={arrow} alt="arrow" className="footer__arrow-icon" />
             </button>
             <p className="footer__copyright">
-               &#169; Copyright 2021. All Rights Reserved
+               Made with ❤️ by Marley A.
             </p>
          </div>
       </div>
