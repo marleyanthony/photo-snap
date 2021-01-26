@@ -152,6 +152,10 @@
 
    &__card-wrapper {
       position: relative;
+
+      @include desktop {
+         width: 25%;
+      }
    }
 
    &__card-img-wrapper {
@@ -237,6 +241,11 @@
       display: grid;
       grid-area: area;
       grid-template-areas: 'area area';
+   }
+
+   @include desktop {
+      grid-area: area;
+      grid-template-areas: 'area area area area';
    }
 
    &__wrapper {

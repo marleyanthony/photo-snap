@@ -19,6 +19,16 @@
          justify-content: space-between;
          align-items: flex-end;
       }
+
+      @include desktop {
+         margin-right: 17.1rem;
+      }
+   }
+
+   &__left-flex-wrapper {
+      @include desktop {
+         margin-left: 17.1rem;
+      }
    }
 
    &__logo {
@@ -60,6 +70,11 @@
       @include tablet-portrait {
          margin-right: 1rem;
       }
+
+      @include desktop {
+         font-size: 2rem;
+         margin-right: 2rem;
+      }
    }
 
    &__cta {
@@ -75,6 +90,10 @@
       @include tablet-portrait {
          margin: 0;
       }
+
+      @include desktop {
+         font-size: 1.5rem;
+      }
    }
 
    &__arrow-icon {
@@ -86,5 +105,9 @@
       letter-spacing: 2px;
       font-weight: 400;
       line-height: 20px;
+
+      @include desktop {
+         font-size: 1.75rem;
+      }
    }
 }
