@@ -1,3 +1,9 @@
+.section-wrapper {
+   @include desktop {
+      display: inline;
+   }
+}
+
 // ! home-section 
 .main-card {
    overflow: hidden;
@@ -28,6 +34,12 @@
          top: 170px;
          left: 39px;
          width: 45%;
+      }
+
+      @include desktop {
+         top: 200px;
+         left: 100px;
+         width: 35%;
       }
    }
 
@@ -245,7 +257,14 @@
 
    @include desktop {
       grid-area: area;
-      grid-template-areas: 'area area area area';
+      grid-template-areas: 'area area area';
+   }
+
+   &--home {
+      @include desktop {
+         grid-area: area;
+         grid-template-areas: 'area area area area';
+      }
    }
 
    &__wrapper {

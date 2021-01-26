@@ -10,8 +10,13 @@ type FeaturesProps = {
 }
 
 const Features: React.FC<FeaturesProps> = ({ content }) => {
+   console.log(content.length)
    return (
-      <section className="features">
+      <section className={
+         content.length === 4
+            ? "features features--home"
+            : "features"
+      }>
          {
             content.map((feature, index) => {
                return (

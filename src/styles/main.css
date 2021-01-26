@@ -350,6 +350,12 @@
   }
 }
 
+@media (min-width: 1200px) {
+  .section-wrapper {
+    display: inline;
+  }
+}
+
 .main-card {
   overflow: hidden;
   padding: 7.2rem 3.3rem;
@@ -398,6 +404,14 @@
     top: 170px;
     left: 39px;
     width: 45%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-card--stories-page {
+    top: 200px;
+    left: 100px;
+    width: 35%;
   }
 }
 
@@ -651,6 +665,16 @@
 
 @media (min-width: 1200px) {
   .features {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: area;
+        grid-template-areas: 'area area area';
+  }
+}
+
+@media (min-width: 1200px) {
+  .features--home {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 4;
