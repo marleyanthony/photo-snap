@@ -7,9 +7,9 @@ import FeaturesTable from './FeaturesTable';
 import { PricingPageHeroContent, PricingOptionsContent, FeaturesTableContent } from '../Models';
 
 const PricingPage = () => {
-   // useEffect(() => {
-   //    window.scrollTo(0, 0);
-   // }, [])
+   useEffect(() => {
+      window.scrollTo(0, 0);
+   }, [])
 
    return (
       <div className="pricing-page">
