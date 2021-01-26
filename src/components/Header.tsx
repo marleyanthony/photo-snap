@@ -68,19 +68,21 @@ const Header = () => {
          <section
             className="header__nav"
          >
-            {
-               NavItems.map((navItem, index) => {
-                  return (
-                     <Link
-                        to={navItem.link}
-                        key={index}
-                        className="header__nav-item header__nav-item--tablet"
-                     >
-                        {navItem.label}
-                     </Link>
-                  )
-               })
-            }
+            <div className="header__nav-item-wrapper">
+               {
+                  NavItems.map((navItem, index) => {
+                     return (
+                        <Link
+                           to={navItem.link}
+                           key={index}
+                           className="header__nav-item header__nav-item--tablet"
+                        >
+                           {navItem.label}
+                        </Link>
+                     )
+                  })
+               }
+            </div>
             <button className="header__nav-cta-btn">
                Get an Invite
             </button>

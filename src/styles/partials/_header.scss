@@ -12,6 +12,14 @@
          display: unset;
          margin-right: 4rem;
       }
+
+      @include desktop {
+         width: 50%;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         margin-right: 16.5rem;
+      }
    }
 
    &__nav-cta-btn {
@@ -28,6 +36,10 @@
 
    &__logo {
       padding: 3.5rem 1.5rem;
+
+      @include desktop {
+         padding-left: 16.5rem;
+      }
    }
 
    &__nav-item {
