@@ -34,7 +34,11 @@ const MainCard: React.FC<MainCardProps> = ({ content }) => {
                            ? 'main-card__card-wrapper main-card__card-wrapper--reverse'
                            : section.header === 'HAZY FULL MOON OF APPALACHIA'
                               ? 'main-card__card-wrapper main-card__card-wrapper--stories-page'
-                              : 'main-card__card-wrapper'
+                              : section.header === 'Pricing'
+                                 ? 'main-card__card-wrapper main-card__card-wrapper--reverse'
+                                 : section.header === 'Features'
+                                    ? 'main-card__card-wrapper main-card__card-wrapper--reverse'
+                                    : 'main-card__card-wrapper'
                   }
                      key={index}>
                      <picture>
