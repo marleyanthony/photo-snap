@@ -404,7 +404,7 @@
   .main-card--stories-page {
     background-color: transparent;
     position: absolute;
-    top: 170px;
+    top: 130px;
     left: 39px;
     width: 45%;
   }
@@ -412,7 +412,7 @@
 
 @media (min-width: 1200px) {
   .main-card--stories-page {
-    top: 200px;
+    top: 75px;
     left: 100px;
     width: 35%;
   }
@@ -449,6 +449,7 @@
 
 .main-card__img {
   display: block !important;
+  width: 100%;
 }
 
 .main-card__featured {
@@ -564,11 +565,13 @@
 
 .story-card__card-img-wrapper {
   position: relative;
-  height: 50%;
+  height: auto;
+  width: 100%;
 }
 
 .story-card__card-bg-img {
   display: block;
+  width: 100%;
 }
 
 .story-card__img-overlay {
