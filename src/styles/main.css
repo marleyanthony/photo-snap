@@ -19,8 +19,7 @@
 
 @media (min-width: 600px) {
   .header__nav {
-    display: unset;
-    margin-right: 4rem;
+    display: none;
   }
 }
 
@@ -94,7 +93,7 @@
   z-index: 10;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 1200px) {
   .header__hamburger-btn {
     display: none;
   }
@@ -439,11 +438,8 @@
 }
 
 @media (min-width: 600px) {
-  .main-card__wrapper--gradient-border {
+  .main-card__wrapper {
     padding: 0 5.4rem;
-    border-left: 4px solid;
-    border-image-source: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
-    border-image-slice: 1;
   }
 }
 
@@ -572,7 +568,7 @@
 }
 
 .story-card__img-overlay {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -659,7 +655,7 @@
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: area;
-        grid-template-areas: 'area area';
+        grid-template-areas: "area area";
   }
 }
 
@@ -669,7 +665,7 @@
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-area: area;
-        grid-template-areas: 'area area area';
+        grid-template-areas: "area area area";
   }
 }
 
@@ -679,7 +675,7 @@
     -ms-grid-column: 1;
     -ms-grid-column-span: 4;
     grid-area: area;
-        grid-template-areas: 'area area area area';
+        grid-template-areas: "area area area area";
   }
 }
 

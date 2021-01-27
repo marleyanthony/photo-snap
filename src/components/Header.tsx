@@ -36,8 +36,7 @@ const Header = () => {
                showNav
                   ? 'header__responsive-nav header__responsive-nav--active'
                   : 'header__responsive-nav'
-            }
-         >
+            }>
             <div
                className={
                   showNav

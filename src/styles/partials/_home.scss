@@ -1,300 +1,298 @@
 .section-wrapper {
-   @include desktop {
-      display: inline;
-   }
+  @include desktop {
+    display: inline;
+  }
 }
 
-// ! home-section 
+// ! home-section
 .main-card {
-   overflow: hidden;
-   padding: 7.2rem 3.3rem;
+  overflow: hidden;
+  padding: 7.2rem 3.3rem;
 
-   &--black {
-      background-color: #000000;
-      color: #fff;
+  &--black {
+    background-color: #000000;
+    color: #fff;
 
-      @include tablet-portrait {
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         padding: 7.2rem 0;
-      }
-   }
-
-   @include tablet-portrait {
+    @include tablet-portrait {
       display: flex;
       flex-direction: column;
       justify-content: center;
-   }
+      padding: 7.2rem 0;
+    }
+  }
 
-   &--stories-page {
-      @include tablet-portrait {
-         background-color: transparent;
-         position: absolute;
-         top: 170px;
-         left: 39px;
-         width: 45%;
-      }
+  @include tablet-portrait {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-      @include desktop {
-         top: 200px;
-         left: 100px;
-         width: 35%;
-      }
-   }
-
-   &__card-wrapper {
-      @include tablet-portrait {
-         display: flex;
-      }
-
-      &--reverse {
-         @include tablet-portrait {
-            flex-direction: row-reverse;
-         }
-      }
-
-      &--stories-page {
-         @include tablet-portrait {
-            display: unset;
-         }
-      }
-   }
-
-   @include tablet-portrait {
-      &__wrapper {
-         &--gradient-border {
-            padding: 0 5.4rem;
-            border-left: 4px solid;
-            border-image-source: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
-            border-image-slice: 1;
-         }
-      }
-   }
-
-   &__img {
-      display: block !important;
-   }
-
-   &__featured {
-      margin-bottom: 1.6rem;
-      letter-spacing: 2px;
-
-      @include tablet-portrait {
-         font-size: 1.2rem;
-         margin-bottom: 2.4rem;
-      }
-   }
-
-   &__content-header {
-      font-size: 3.2rem;
-      font-weight: 700;
-      line-height: 4rem;
-      letter-spacing: 3.3px;
-      text-align: left;
-      text-transform: uppercase;
-      margin-bottom: 1.6rem;
-   }
-
-   &__date-author-wrapper {
-      margin-bottom: 1.6rem;
-      display: flex;
-      align-items: center;
-
-      @include tablet-portrait {
-         margin-bottom: 2.4rem;
-      }
-   }
-
-   &__date {
-      margin-right: 0.9rem;
-
-      @include tablet-portrait {
-         font-size: 1.3rem;
-      }
-   }
-
-   &__author {
-      font-weight: bold;
-
-      @include tablet-portrait {
-         font-size: 1.3rem;
-      }
-   }
-
-   &__content-info {
-      font-size: 1.5rem;
-      font-weight: 400;
-      line-height: 2.5rem;
-      text-align: left;
-      margin-bottom: 2.3rem;
-   }
-
-   &__cta {
-      font-size: 1.2rem;
-      font-weight: 700;
-      line-height: 1.6rem;
-      letter-spacing: 2px;
-      text-align: left;
-      text-transform: uppercase;
-      // color: #fff;
+  &--stories-page {
+    @include tablet-portrait {
       background-color: transparent;
-      border: none;
-      display: flex;
-      align-items: center;
-
-      &--white {
-         color: #fff;
-      }
-   }
-
-   &__cta-arrow {
-      margin-left: 1.8rem;
-   }
-}
-
-
-
-// ! story card 
-.story-card {
-   @include tablet-portrait {
-      display: flex;
-      flex-wrap: wrap;
-   }
-
-   &__card-wrapper {
-      position: relative;
-
-      @include desktop {
-         width: 25%;
-      }
-   }
-
-   &__card-img-wrapper {
-      position: relative;
-      height: 50%;
-   }
-
-   &__card-bg-img {
-      display: block;
-   }
-
-   &__img-overlay {
-      content: '';
       position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      z-index: 1;
-      background: rgba(0, 0, 0, 0.5);
+      top: 170px;
+      left: 39px;
+      width: 45%;
+    }
 
+    @include desktop {
+      top: 200px;
+      left: 100px;
+      width: 35%;
+    }
+  }
+
+  &__card-wrapper {
+    @include tablet-portrait {
+      display: flex;
+    }
+
+    &--reverse {
       @include tablet-portrait {
-         display: none;
+        flex-direction: row-reverse;
       }
-   }
+    }
 
-   &__card-content-wrapper {
-      position: absolute;
-      bottom: 5rem;
-      left: 4rem;
-      color: #fff;
-      width: 80%;
-      z-index: 2;
-   }
+    &--stories-page {
+      @include tablet-portrait {
+        display: unset;
+      }
+    }
+  }
 
-   &__date {
-      margin-bottom: 0.9rem;
-      font-size: 1.3rem;
-      font-weight: 400;
-      line-height: 1.7rem;
-   }
+  @include tablet-portrait {
+    &__wrapper {
+      padding: 0 5.4rem;
 
-   &__card-title {
-      font-size: 1.8rem;
-      font-weight: 700;
-      line-height: 2.5rem;
-   }
+      &--gradient-border {
+        // padding: 0 5.4rem;
+        // border-left: 4px solid;
+        // border-image-source: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
+        // border-image-slice: 1;
+      }
+    }
+  }
 
-   &__card-author {
-      font-size: 1.3rem;
-      font-weight: 400;
-      line-height: 1.7rem;
-   }
+  &__img {
+    display: block !important;
+  }
 
-   &__read-cta-wrapper {
-      border-top: 1px solid #fff;
-      display: flex;
-      justify-content: space-between;
-      padding-top: 2rem;
-      margin-top: 2rem;
-   }
+  &__featured {
+    margin-bottom: 1.6rem;
+    letter-spacing: 2px;
 
-   &__read-cta-text {
+    @include tablet-portrait {
       font-size: 1.2rem;
-      font-weight: 700;
-      line-height: 1.6rem;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-   }
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  &__content-header {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 4rem;
+    letter-spacing: 3.3px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+  }
+
+  &__date-author-wrapper {
+    margin-bottom: 1.6rem;
+    display: flex;
+    align-items: center;
+
+    @include tablet-portrait {
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  &__date {
+    margin-right: 0.9rem;
+
+    @include tablet-portrait {
+      font-size: 1.3rem;
+    }
+  }
+
+  &__author {
+    font-weight: bold;
+
+    @include tablet-portrait {
+      font-size: 1.3rem;
+    }
+  }
+
+  &__content-info {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    text-align: left;
+    margin-bottom: 2.3rem;
+  }
+
+  &__cta {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.6rem;
+    letter-spacing: 2px;
+    text-align: left;
+    text-transform: uppercase;
+    // color: #fff;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+
+    &--white {
+      color: #fff;
+    }
+  }
+
+  &__cta-arrow {
+    margin-left: 1.8rem;
+  }
 }
 
+// ! story card
+.story-card {
+  @include tablet-portrait {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
+  &__card-wrapper {
+    position: relative;
 
-// ! features 
+    @include desktop {
+      width: 25%;
+    }
+  }
+
+  &__card-img-wrapper {
+    position: relative;
+    height: 50%;
+  }
+
+  &__card-bg-img {
+    display: block;
+  }
+
+  &__img-overlay {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+
+    @include tablet-portrait {
+      display: none;
+    }
+  }
+
+  &__card-content-wrapper {
+    position: absolute;
+    bottom: 5rem;
+    left: 4rem;
+    color: #fff;
+    width: 80%;
+    z-index: 2;
+  }
+
+  &__date {
+    margin-bottom: 0.9rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.7rem;
+  }
+
+  &__card-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+  }
+
+  &__card-author {
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.7rem;
+  }
+
+  &__read-cta-wrapper {
+    border-top: 1px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    margin-top: 2rem;
+  }
+
+  &__read-cta-text {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.6rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+}
+
+// ! features
 .features {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   text-align: center;
-   padding: 8rem 3.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 8rem 3.2rem;
 
-   @include tablet-portrait {
-      display: grid;
+  @include tablet-portrait {
+    display: grid;
+    grid-area: area;
+    grid-template-areas: "area area";
+  }
+
+  @include desktop {
+    grid-area: area;
+    grid-template-areas: "area area area";
+  }
+
+  &--home {
+    @include desktop {
       grid-area: area;
-      grid-template-areas: 'area area';
-   }
+      grid-template-areas: "area area area area";
+    }
+  }
 
-   @include desktop {
-      grid-area: area;
-      grid-template-areas: 'area area area';
-   }
+  &__wrapper {
+    padding: 0 3rem;
+    margin-bottom: 5.6rem;
 
-   &--home {
-      @include desktop {
-         grid-area: area;
-         grid-template-areas: 'area area area area';
-      }
-   }
+    @include tablet-portrait {
+      width: 100%;
+    }
+  }
 
-   &__wrapper {
-      padding: 0 3rem;
-      margin-bottom: 5.6rem;
+  &__icon {
+    margin-bottom: 4.8rem;
 
-      @include tablet-portrait {
-         width: 100%;
-      }
-   }
+    @include tablet-portrait {
+      height: 5rem;
+      width: auto;
+    }
+  }
 
-   &__icon {
-      margin-bottom: 4.8rem;
+  &__title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    margin-bottom: 1.6rem;
+  }
 
-      @include tablet-portrait {
-         height: 5rem;
-         width: auto;
-      }
-   }
-
-   &__title {
-      font-size: 1.8rem;
-      font-weight: 700;
-      line-height: 2.5rem;
-      margin-bottom: 1.6rem;
-   }
-
-   &__summary {
-      font-size: 1.5rem;
-      font-weight: 400;
-      line-height: 2.5rem;
-   }
+  &__summary {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+  }
 }
