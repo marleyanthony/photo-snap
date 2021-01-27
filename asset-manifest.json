@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/photo-snap/static/css/main.f9335769.chunk.css",
-    "main.js": "/photo-snap/static/js/main.2fcb9c16.chunk.js",
-    "main.js.map": "/photo-snap/static/js/main.2fcb9c16.chunk.js.map",
+    "main.css": "/photo-snap/static/css/main.be5d6185.chunk.css",
+    "main.js": "/photo-snap/static/js/main.07b55867.chunk.js",
+    "main.js.map": "/photo-snap/static/js/main.07b55867.chunk.js.map",
     "runtime-main.js": "/photo-snap/static/js/runtime-main.57448031.js",
     "runtime-main.js.map": "/photo-snap/static/js/runtime-main.57448031.js.map",
     "static/js/2.e73b9096.chunk.js": "/photo-snap/static/js/2.e73b9096.chunk.js",
     "static/js/2.e73b9096.chunk.js.map": "/photo-snap/static/js/2.e73b9096.chunk.js.map",
     "index.html": "/photo-snap/index.html",
-    "static/css/main.f9335769.chunk.css.map": "/photo-snap/static/css/main.f9335769.chunk.css.map",
+    "static/css/main.be5d6185.chunk.css.map": "/photo-snap/static/css/main.be5d6185.chunk.css.map",
     "static/js/2.e73b9096.chunk.js.LICENSE.txt": "/photo-snap/static/js/2.e73b9096.chunk.js.LICENSE.txt",
     "static/media/18-days-voyage.293feb72.jpg": "/photo-snap/static/media/18-days-voyage.293feb72.jpg",
     "static/media/18-days-voyage.e97725e3.jpg": "/photo-snap/static/media/18-days-voyage.e97725e3.jpg",
@@ -53,6 +53,7 @@
     "static/media/land-of-dreams.c0dd70b7.jpg": "/photo-snap/static/media/land-of-dreams.c0dd70b7.jpg",
     "static/media/logo-white.34f3316a.svg": "/photo-snap/static/media/logo-white.34f3316a.svg",
     "static/media/logo.a44763db.svg": "/photo-snap/static/media/logo.a44763db.svg",
+    "static/media/mail.a40c099d.svg": "/photo-snap/static/media/mail.a40c099d.svg",
     "static/media/milky-way.10650639.jpg": "/photo-snap/static/media/milky-way.10650639.jpg",
     "static/media/milky-way.5ae9a1f2.jpg": "/photo-snap/static/media/milky-way.5ae9a1f2.jpg",
     "static/media/moon-of-appalacia.0d34b444.jpg": "/photo-snap/static/media/moon-of-appalacia.0d34b444.jpg",
@@ -61,7 +62,6 @@
     "static/media/mountains.2540b713.jpg": "/photo-snap/static/media/mountains.2540b713.jpg",
     "static/media/mountains.bfd60073.jpg": "/photo-snap/static/media/mountains.bfd60073.jpg",
     "static/media/no-limit.b8deb4d2.svg": "/photo-snap/static/media/no-limit.b8deb4d2.svg",
-    "static/media/pinterest-white.3c579cd8.svg": "/photo-snap/static/media/pinterest-white.3c579cd8.svg",
     "static/media/rage-of-the-sea.763dc05f.jpg": "/photo-snap/static/media/rage-of-the-sea.763dc05f.jpg",
     "static/media/rage-of-the-sea.add7f6d4.jpg": "/photo-snap/static/media/rage-of-the-sea.add7f6d4.jpg",
     "static/media/responsive.d5fd70c1.svg": "/photo-snap/static/media/responsive.d5fd70c1.svg",
@@ -71,17 +71,15 @@
     "static/media/somwarpet.ae48dd6f.jpg": "/photo-snap/static/media/somwarpet.ae48dd6f.jpg",
     "static/media/trip-to-nowhere.07be8ce9.jpg": "/photo-snap/static/media/trip-to-nowhere.07be8ce9.jpg",
     "static/media/trip-to-nowhere.1bffa859.jpg": "/photo-snap/static/media/trip-to-nowhere.1bffa859.jpg",
-    "static/media/twitter-white.0201a27d.svg": "/photo-snap/static/media/twitter-white.0201a27d.svg",
     "static/media/unforeseen-corners.4eea0daa.jpg": "/photo-snap/static/media/unforeseen-corners.4eea0daa.jpg",
     "static/media/unforeseen-corners.c1c8a900.jpg": "/photo-snap/static/media/unforeseen-corners.c1c8a900.jpg",
     "static/media/world-tour.a4be511d.jpg": "/photo-snap/static/media/world-tour.a4be511d.jpg",
-    "static/media/world-tour.d462b0d9.jpg": "/photo-snap/static/media/world-tour.d462b0d9.jpg",
-    "static/media/youtube-white.8a35e5b0.svg": "/photo-snap/static/media/youtube-white.8a35e5b0.svg"
+    "static/media/world-tour.d462b0d9.jpg": "/photo-snap/static/media/world-tour.d462b0d9.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.57448031.js",
     "static/js/2.e73b9096.chunk.js",
-    "static/css/main.f9335769.chunk.css",
-    "static/js/main.2fcb9c16.chunk.js"
+    "static/css/main.be5d6185.chunk.css",
+    "static/js/main.07b55867.chunk.js"
   ]
 }
