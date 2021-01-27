@@ -41,6 +41,7 @@
 
 .header__nav-cta-btn {
   text-transform: uppercase;
+  text-decoration: none;
   color: #fff;
   font-size: 1.2rem;
   font-weight: 700;
@@ -311,6 +312,7 @@
 
 .footer__cta {
   background-color: transparent;
+  text-decoration: none;
   border: none;
   color: #fff;
   display: -webkit-box;

@@ -58,7 +58,7 @@ const Header = () => {
                   })
                }
                <button className="header__responsive-nav-cta">
-                  Get An Invite
+                  Get In Touch
             </button>
             </div>
          </section>
@@ -82,9 +82,9 @@ const Header = () => {
                   })
                }
             </div>
-            <button className="header__nav-cta-btn">
-               Get an Invite
-            </button>
+            <a href="mailto: marleycanthony@gmail.com" className="header__nav-cta-btn">
+               <div className="header__nav-cta-btn-text">Get In Touch</div>
+            </a>
          </section>
       </div>
    )

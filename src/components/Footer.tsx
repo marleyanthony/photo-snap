@@ -34,10 +34,10 @@ const Footer = () => {
             </div>
          </div>
          <div className="footer__right-flex-wrapper">
-            <button className="footer__cta">
-               Get An Invite
+            <a href="mailto: marleycanthony@gmail.com" className="footer__cta">
+               Get In Touch
                <img src={arrow} alt="arrow" className="footer__arrow-icon" />
-            </button>
+            </a>
             <p className="footer__copyright">
                Made with ❤️ by Marley A.
             </p>
