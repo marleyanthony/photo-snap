@@ -245,9 +245,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 50%;
   margin: 0 auto 5.5rem;
 }
@@ -256,6 +256,10 @@
   .footer__social-icon-wrapper {
     margin: 0;
   }
+}
+
+.footer__social-icon {
+  margin: 0 1rem;
 }
 
 .footer__pages-wrapper {
